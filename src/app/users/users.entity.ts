@@ -15,9 +15,9 @@ export class UsersEntity {
   firstName: string;
   @Column({ name: 'last_name' })
   lastName: string;
-  @Column()
+  @Column({ nullable: true })
   address: string;
-  @Column({ name: 'phone_number' })
+  @Column({ name: 'phone_number', nullable: true })
   phoneNumber: string;
   @Column()
   email: string;
